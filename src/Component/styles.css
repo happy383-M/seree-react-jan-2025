@@ -1,0 +1,1981 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header styles */
+header {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 2.5em;
+}
+
+/* Navigation styles */
+nav {
+  margin: 10px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 0 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Main content styles */
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Button styles */
+button {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* User list styles */
+.user-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.user-list li {
+  background: #e7f3fe;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  transition: transform 0.2s;
+}
+
+.user-list li:hover {
+  transform: scale(1.02);
+}
+
+/* Fruit list styles */
+.fruit-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.fruit-list div {
+  background: #ffeb3b;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  flex: 1 1 calc(33% - 10px);
+  transition: transform 0.2s;
+}
+
+.fruit-list div:hover {
+  transform: scale(1.05);
+}
+
+/* General Container Styles */
+.users-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styles */
+.users-container h2 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Table Styles */
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.users-table thead {
+  background-color: #007bff;
+  color: white;
+}
+
+.users-table th,
+.users-table td {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.users-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.users-table tbody tr:hover {
+  background-color: #e9ecef;
+  cursor: pointer;
+}
+
+.users-table th {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.users-table td {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .users-table th,
+  .users-table td {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+
+  .users-container h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* General Styles for the List Container */
+ol {
+  list-style-type: decimal;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  background-color: #f8f9fa; /* Light background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  font-family: Arial, sans-serif;
+}
+
+/* List Item Styles */
+ol li {
+  padding: 10px 15px;
+  margin: 5px 0;
+  background-color: #ffffff; /* White background for items */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for items */
+  font-size: 1rem;
+  color: #333; /* Dark text color */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover Effect for List Items */
+ol li:hover {
+  transform: translateY(-3px); /* Slight lift on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  background-color: #e9ecef; /* Light gray background on hover */
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  ol {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+
+  ol li {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Gradient background */
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Home Container */
+.home-container {
+  text-align: center;
+  padding: 50px 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff; /* White background for the container */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  animation: fadeIn 1s ease-in-out; /* Smooth fade-in animation */
+}
+
+/* Heading Styles */
+.home-container h1 {
+  font-size: 2.5rem;
+  color: #007bff; /* Vivid blue for the heading */
+  margin-bottom: 20px;
+}
+
+/* Image Styling */
+.home-container img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Circular image */
+  border: 5px solid #007bff; /* Blue border around the image */
+  margin-bottom: 20px;
+  transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.home-container img:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Text Styling */
+.home-container p {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.home-container p span {
+  color: #ff6f61; /* Highlighted text in orange */
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-container {
+    padding: 30px 15px;
+  }
+
+  .home-container h1 {
+    font-size: 2rem;
+  }
+
+  .home-container img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .home-container p {
+    font-size: 1rem;
+  }
+}
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Gradient background */
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Properties Container */
+.properties-container {
+  text-align: center;
+  padding: 20px;
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #ffffff; /* White background for the container */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  animation: fadeIn 1s ease-in-out; /* Smooth fade-in animation */
+}
+
+/* Heading Styles */
+.properties-container h4 {
+  font-size: 1.5rem;
+  color: #007bff; /* Vivid blue for the text */
+  margin: 10px 0;
+  font-weight: bold;
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+.properties-container h4:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+  color: #ff6f61; /* Change color to orange on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .properties-container {
+    padding: 15px;
+  }
+
+  .properties-container h4 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Gradient background */
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* About Container */
+.about-container {
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #ffffff; /* White background for the container */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  animation: fadeIn 1s ease-in-out; /* Smooth fade-in animation */
+}
+
+/* Heading Styles */
+.about-container h1 {
+  font-size: 2.5rem;
+  color: #007bff; /* Vivid blue for the heading */
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Paragraph Styles */
+.about-container p {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 15px 0;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+.about-container p span {
+  color: #ff6f61; /* Highlighted text in orange */
+  font-style: italic;
+}
+
+/* Hover Effect for Paragraphs */
+.about-container p:hover {
+  color: #007bff; /* Change text color to blue on hover */
+  transform: scale(1.05); /* Slight zoom on hover */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 30px 15px;
+  }
+
+  .about-container h1 {
+    font-size: 2rem;
+  }
+
+  .about-container p {
+    font-size: 1rem;
+  }
+}
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff); /* Gradient background */
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Contact Container */
+.contact-container {
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #ffffff; /* White background for the container */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  animation: fadeIn 1s ease-in-out; /* Smooth fade-in animation */
+}
+
+/* Heading Styles */
+.contact-container h1 {
+  font-size: 2.5rem;
+  color: #007bff; /* Vivid blue for the heading */
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Paragraph Styles */
+.contact-container p {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 15px 0;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+.contact-container p span {
+  color: #ff6f61; /* Highlighted text in orange */
+  font-style: italic;
+}
+
+/* Hover Effect for Paragraphs */
+.contact-container p:hover {
+  color: #007bff; /* Change text color to blue on hover */
+  transform: scale(1.05); /* Slight zoom on hover */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 30px 15px;
+  }
+
+  .contact-container h1 {
+    font-size: 2rem;
+  }
+
+  .contact-container p {
+    font-size: 1rem;
+  }
+}
+
+/* General Styles for the List Container */
+ol {
+  list-style-type: decimal;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff); /* Gradient background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  font-family: 'Arial', sans-serif;
+  color: #ffffff; /* White text for contrast */
+}
+
+/* List Item Styles */
+ol li {
+  padding: 10px 15px;
+  margin: 5px 0;
+  background-color: #ffffff; /* White background for items */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for items */
+  font-size: 1rem;
+  color: #333; /* Dark text color */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for List Items */
+ol li:hover {
+  transform: translateY(-3px); /* Slight lift on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  background-color: #007bff; /* Blue background on hover */
+  color: #ffffff; /* White text on hover */
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  ol {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+
+  ol li {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff); /* Gradient background */
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Users Container */
+.users-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 50px auto;
+  background-color: #ffffff; /* White background for the container */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  animation: fadeIn 1s ease-in-out; /* Smooth fade-in animation */
+}
+
+/* Heading Styles */
+.users-container h2 {
+  text-align: center;
+  color: #007bff; /* Vivid blue for the heading */
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Table Styles */
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.users-table thead {
+  background-color: #007bff; /* Vivid blue header */
+  color: white;
+}
+
+.users-table th,
+.users-table td {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.users-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2; /* Light gray for alternating rows */
+}
+
+.users-table tbody tr:hover {
+  background-color: #e9ecef; /* Light teal hover effect */
+  cursor: pointer;
+}
+
+.users-table th {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.users-table td {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .users-container {
+    padding: 15px;
+  }
+
+  .users-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .users-table th,
+  .users-table td {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+}
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Gradient background */
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+
+/* Education Container */
+.education-container {
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #ffffff; /* White background for the container */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  animation: fadeIn 1s ease-in-out; /* Smooth fade-in animation */
+}
+
+/* Heading Styles */
+.education-container h1 {
+  font-size: 2.5rem;
+  color: #007bff; /* Vivid blue for the heading */
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Paragraph Styles */
+.education-container p {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 15px 0;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+.education-container p span {
+  color: #ff6f61; /* Highlighted text in orange */
+  font-style: italic;
+}
+
+/* Hover Effect for Text */
+.education-container p:hover {
+  color: #007bff; /* Change text color to blue on hover */
+  transform: scale(1.05); /* Slight zoom on hover */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .education-container {
+    padding: 30px 15px;
+  }
+
+  .education-container h1 {
+    font-size: 2rem;
+  }
+
+  .education-container p {
+    font-size: 1rem;
+  }
+}
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff); /* Gradient background */
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Home Container */
+.home-container {
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #ffffff; /* White background for the container */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  animation: fadeIn 1s ease-in-out; /* Smooth fade-in animation */
+}
+
+/* Heading Styles */
+.home-container h1 {
+  font-size: 2.5rem;
+  color: #007bff; /* Vivid blue for the heading */
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Image Styling */
+.home-container img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Circular image */
+  border: 5px solid #007bff; /* Blue border around the image */
+  margin-bottom: 20px;
+  transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.home-container img:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Text Styling */
+.home-container p,
+.home-container span {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.home-container span {
+  color: #ff6f61; /* Highlighted text in orange */
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-container {
+    padding: 30px 15px;
+  }
+
+  .home-container h1 {
+    font-size: 2rem;
+  }
+
+  .home-container img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .home-container p,
+  .home-container span {
+    font-size: 1rem;
+  }
+}
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Gradient background */
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Properties Container */
+.properties-container {
+  text-align: center;
+  padding: 20px;
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #ffffff; /* White background for the container */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  animation: fadeIn 1s ease-in-out; /* Smooth fade-in animation */
+}
+
+/* Heading Styles */
+.properties-container h4 {
+  font-size: 1.5rem;
+  color: #007bff; /* Vivid blue for the text */
+  margin: 10px 0;
+  font-weight: bold;
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+.properties-container h4:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+  color: #ff6f61; /* Change color to orange on hover */
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .properties-container {
+    padding: 15px;
+  }
+
+  .properties-container h4 {
+    font-size: 1.2rem;
+  }
+}
+
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff); /* Gradient background */
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Users Container */
+.users-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 50px auto;
+  background-color: #ffffff; /* White background for the container */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  animation: fadeIn 1s ease-in-out; /* Smooth fade-in animation */
+}
+
+/* Heading Styles */
+.users-container h2 {
+  text-align: center;
+  color: #007bff; /* Vivid blue for the heading */
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Table Styles */
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.users-table thead {
+  background-color: #007bff; /* Vivid blue header */
+  color: white;
+}
+
+.users-table th,
+.users-table td {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.users-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2; /* Light gray for alternating rows */
+}
+
+.users-table tbody tr:hover {
+  background-color: #e9ecef; /* Light teal hover effect */
+  cursor: pointer;
+}
+
+.users-table th {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.users-table td {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .users-container {
+    padding: 15px;
+  }
+
+  .users-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .users-table th,
+  .users-table td {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+}
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Gradient background */
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Properties Container */
+.properties-container {
+  text-align: center;
+  padding: 30px;
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #ffffff; /* White background for the container */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  animation: fadeIn 1s ease-in-out; /* Smooth fade-in animation */
+}
+
+/* Heading Styles */
+.properties-container h4 {
+  font-size: 1.5rem;
+  color: #007bff; /* Vivid blue for the text */
+  margin: 15px 0;
+  font-weight: bold;
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+.properties-container h4:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+  color: #ff6f61; /* Change color to orange on hover */
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .properties-container {
+    padding: 20px;
+  }
+
+  .properties-container h4 {
+    font-size: 1.2rem;
+  }
+}
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff); /* Gradient background */
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* App Container */
+div {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  background-color: #007bff; /* Vivid blue */
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+
+
+/* Navigation Styles */
+.nav {
+  display: flex;
+  justify-content: center;
+  background-color: #007bff;
+  padding: 10px 0;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #ff6f61; /* Orange on hover */
+}
+
+/* Table Styles (For Users Component) */
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-top: 20px;
+}
+
+.users-table thead {
+  background-color: #007bff; /* Vivid blue header */
+  color: white;
+}
+
+.users-table th,
+.users-table td {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.users-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2; /* Light gray for alternating rows */
+}
+
+.users-table tbody tr:hover {
+  background-color: #e9ecef; /* Light teal hover effect */
+  cursor: pointer;
+}
+
+.users-table th {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.users-table td {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Card Styles (For Components like Home, About, etc.) */
+.card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  animation: fadeIn 1s ease-in-out; /* Smooth fade-in animation */
+}
+
+.card h1,
+.card h2 {
+  color: #007bff; /* Vivid blue for headings */
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.card p span {
+  color: #ff6f61; /* Highlighted text in orange */
+  font-weight: bold;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav a {
+    font-size: 0.9rem;
+    margin: 0 10px;
+  }
+
+  .users-table th,
+  .users-table td {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+
+  .card h1,
+  .card h2 {
+    font-size: 1.5rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+  }
+}
+
+
+/* Highlight the row on hover */
+.user-row:hover {
+  background-color: #e9ecef; /* Light gray */
+  cursor: pointer;
+}
+
+/* User details section */
+.user-details {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f8f9fa; /* Light background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-details h3 {
+  color: #007bff; /* Vivid blue */
+  margin-bottom: 10px;
+}
+
+.user-details p {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Highlight the row on hover */
+.user-row:hover {
+  background-color: #e9ecef; /* Light gray */
+  cursor: pointer;
+}
+
+/* User details section */
+.user-details {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f8f9fa; /* Light background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.user-details h3 {
+  color: #007bff; /* Vivid blue */
+  margin-bottom: 10px;
+}
+
+.user-details p {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* User photo styling */
+.user-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Circular photo */
+  margin-bottom: 15px;
+  border: 3px solid #007bff; /* Blue border */
+}
+
+/* Fruit list container */
+.fruitlist-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f8f9fa; /* Light background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Fruit list items */
+.fruit-item {
+  font-size: 1.2rem;
+  color: #007bff; /* Blue text */
+  cursor: pointer;
+  margin: 5px 0;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.fruit-item:hover {
+  color: #ff6f61; /* Orange on hover */
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Fruit details section */
+.fruit-details {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ffffff; /* White background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fruit-details h3 {
+  color: #007bff; /* Blue heading */
+  margin-bottom: 10px;
+}
+
+.fruit-details p {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0;
+}
+/* Fruit list container */
+.fruitlist-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f8f9fa; /* Light background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Fruit list items */
+.fruit-item {
+  font-size: 1.2rem;
+  color: #007bff; /* Blue text */
+  cursor: pointer;
+  margin: 5px 0;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.fruit-item:hover {
+  color: #ff6f61; /* Orange on hover */
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Fruit details section */
+.fruit-details {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ffffff; /* White background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.fruit-details h3 {
+  color: #007bff; /* Blue heading */
+  margin-bottom: 10px;
+}
+
+.fruit-details p {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Fruit image styling */
+.fruit-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 3px solid #007bff; /* Blue border */
+}
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff); /* Gradient background */
+  margin: 0;
+  padding: 0;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Form Container */
+form {
+  background-color: #ffffff; /* White background for the form */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Input Fields */
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #007bff; /* Blue border on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Blue glow on focus */
+  outline: none;
+}
+
+/* Submit Button */
+button {
+  background-color: #007bff; /* Blue background */
+  color: rgb(226, 195, 195);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+button:active {
+  transform: scale(0.95); /* Slight shrink on click */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  form {
+    padding: 20px;
+  }
+
+  input {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+}
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff); /* Gradient background */
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Footer Styles */
+.footer {
+  background: linear-gradient(145deg, #007bff, #0056b3); /* Gradient background for footer */
+  color: white;
+  text-align: center;
+  padding: 0px 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow for 3D effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.footer:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
+}
+
+/* Footer Text */
+.footer p {
+  margin: 0;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+}
+
+/* Responsive Design */
+@media (max-width: 268px) {
+  .footer {
+    font-size: 1.2rem;
+    padding: 15px 30px;
+  }
+}
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Gradient background */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  color: #333;
+}
+
+/* Form Container */
+form {
+  background-color: #ffffff; /* White background for the form */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Input Fields */
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #007bff; /* Blue border on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Blue glow on focus */
+  outline: none;
+}
+
+/* Submit Button */
+button {
+  background-color: #007bff; /* Blue background */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+button:active {
+  transform: scale(0.95); /* Slight shrink on click */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  form {
+    padding: 20px;
+  }
+
+  input {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+}
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body takes up the full viewport height */
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Gradient background */
+}
+
+/* Main Content */
+form {
+  flex: 1; /* Push the footer to the bottom */
+  background-color: #ffffff; /* White background for the form */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Input Fields */
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #007bff; /* Blue border on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Blue glow on focus */
+  outline: none;
+}
+
+/* Submit Button */
+button {
+  background-color: #007bff; /* Blue background */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+button:active {
+  transform: scale(0.95); /* Slight shrink on click */
+}
+
+/* Footer Styles */
+.footer {
+  background: linear-gradient(145deg, #007bff, #0056b3); /* Gradient background for footer */
+  color: white;
+  text-align: center;
+  padding: 15px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Footer Text */
+.footer p {
+  margin: 0;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  form {
+    padding: 20px;
+  }
+
+  input {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+
+  .footer {
+    font-size: 0.9rem;
+  }
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Gradient background */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body takes up the full viewport height */
+}
+
+/* Main Content */
+form {
+  flex: 1; /* Push the footer to the bottom */
+  background-color: #ffffff; /* White background for the form */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Input Fields */
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #007bff; /* Blue border on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Blue glow on focus */
+  outline: none;
+}
+
+/* Submit Button */
+button {
+  background-color: #007bff; /* Blue background */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+button:active {
+  transform: scale(0.95); /* Slight shrink on click */
+}
+
+/* Footer Styles */
+.footer {
+  background: linear-gradient(145deg, #007bff, #0056b3); /* Gradient background for footer */
+  color: white;
+  text-align: center;
+  padding: 15px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Footer Text */
+.footer p {
+  margin: 0;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  form {
+    padding: 20px;
+  }
+
+  input {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+
+  .footer {
+    font-size: 0.9rem;
+  }
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Gradient background */
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Page Container */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+}
+
+.content-wrap {
+  flex: 1; /* Push the footer to the bottom */
+}
+
+/* Fruit List Container */
+.fruitlist-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #ffffff; /* White background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.fruit-item {
+  font-size: 1.2rem;
+  color: #007bff; /* Blue text */
+  cursor: pointer;
+  margin: 5px 0;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.fruit-item:hover {
+  color: #ff6f61; /* Orange on hover */
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.fruit-details {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f8f9fa; /* Light background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Footer Styles */
+.footer {
+  background: linear-gradient(145deg, #007bff, #0056b3); /* Gradient background for footer */
+  color: white;
+  text-align: center;
+  padding: 15px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  width: 100%;
+}
+
+.footer p {
+  margin: 0;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .fruitlist-container {
+    padding: 15px;
+  }
+
+  .fruit-item {
+    font-size: 1rem;
+  }
+
+  .footer {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff); /* Gradient background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  color: #333;
+}
+
+/* Form Container */
+form {
+  background-color: #ffffff; /* White background for the form */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="phone"],
+input[type="age"] {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="phone"]:focus,
+input[type="age"]:focus {
+  border-color: #007bff; /* Blue border on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Blue glow on focus */
+  outline: none;
+}
+
+/* Submit Button */
+input[type="submit"] {
+  background-color: #007bff; /* Blue background */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+input[type="submit"]:active {
+  transform: scale(0.95); /* Slight shrink on click */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  form {
+    padding: 20px;
+  }
+
+  input {
+    font-size: 0.9rem;
+  }
+
+  input[type="submit"] {
+    font-size: 0.9rem;
+  }
+}
+
