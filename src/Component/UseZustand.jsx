@@ -11,7 +11,6 @@ function Zustanad()
                </div>
                )
 
-
 }
 export default Zustanad;
 
