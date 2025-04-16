@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "./Component/Header";
-import Footer from "./Component/Footer";
+import Header from "./Component/header";
+import Footer from "./Component/footer";
 import Contact from "./Component/Contact";
 import About from "./Component/About";
 import Education from "./Component/Education";
 import Home from "./Component/Home";
-import Fruitlist from "./Component/Fruitlist";
+import Fruitlist from "./Component/fruitList"; // Corrected import path
 import Properties from "./Component/Properties";
 import Users from "./Component/Users";
 import HandleFormState from "./Component/HandleFormState";
@@ -14,16 +14,14 @@ import HandleState from "./Component/HandleState";
 import UCComponent from "./Component/UCComponent";
 import UseEffect from "./Component/UseEffect";
 import ChangeBGColour from "./Component/ChangeBGColour";
-import Backgroundchangecolor from "./Component/Backgroundchangecolor";  
+import Backgroundchangecolor from "./Component/Backgroundchangecolor";
 import UseContext from "./Component/UseContext";
-import UseCallback  from "./Component/UseCallback";
+import UseCallback from "./Component/UseCallback";
 import UseMemo from "./Component/UseMemo";
 import UseNavigate from "./Component/UseNavigate";
 import Forms from "./Component/Forms";
 import ApiConnectivity from "./Component/ApiConnectivity";
 import UseZustand from "./Component/UseZustand";
-
-
 
 function App() {
   let fruits = [
@@ -37,7 +35,7 @@ function App() {
     },
     {
       name: "Orange",
-      description: "Oranges are juicy, tangy fruits packed with vitamin C.",  
+      description: "Oranges are juicy, tangy fruits packed with vitamin C.",
     },
   ];
   let USER = [
@@ -46,28 +44,28 @@ function App() {
       age: 21,
       phone: "1234567890",
       email: "manas@email.com",
-      photo: "https://sigmawire.net/i/04/uU6XV7.jpg" 
+      photo: "https://sigmawire.net/i/04/uU6XV7.jpg",
     },
     {
       name: "Anshu",
       age: 22,
       phone: "0987654321",
       email: "anshu@email.com",
-      photo: 'https://sigmawire.net/i/04/02HpbS.png'
+      photo: "https://sigmawire.net/i/04/02HpbS.png",
     },
     {
       name: "Omm",
       age: 23,
       phone: "1122334455",
       email: "omm@email.com",
-      photo: "https://sigmawire.net/i/04/oE1rhP.png"
+      photo: "https://sigmawire.net/i/04/oE1rhP.png",
     },
     {
       name: "Aditya",
       age: 24,
       phone: "2233445566",
       email: "aditya@email.com",
-      photo: 'https://sigmawire.net/i/04/OGyJ1L.jpg'
+      photo: "https://sigmawire.net/i/04/OGyJ1L.jpg",
     },
   ];
 
@@ -96,11 +94,6 @@ function App() {
           <Route path="/forms" element={<Forms />} />
           <Route path="/apiconnectivity" element={<ApiConnectivity />} />
           <Route path="/usezustand" element={<UseZustand />} />
-
-          
-         
-          
-
         </Routes>
         <Footer />
       </BrowserRouter>

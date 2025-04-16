@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./styles.css";
 
-function Fruitlist({ fruits }) {
+function FruitList({ fruits }) {
   const [selectedFruit, setSelectedFruit] = useState(null);
 
   const handleFruitClick = (fruit) => {
@@ -32,4 +32,4 @@ function Fruitlist({ fruits }) {
   );
 }
 
-export default Fruitlist;
+export default FruitList;
